@@ -1,0 +1,26 @@
+{
+  "name": "spare-parts-forecasting-system",
+  "version": "1.0.0",
+  "description": "Full-stack spare parts forecasting application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "spare-parts",
+    "forecasting",
+    "inventory",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
